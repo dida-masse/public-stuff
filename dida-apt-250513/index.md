@@ -5,7 +5,7 @@ theme: gaia
 class:
   - lead
   - invert
-paginate: true
+
 
 style: |
   section {
@@ -13,12 +13,20 @@ style: |
   }
 ---
 
-# Marker Game
- 
+![bg left](img/marker-game.jpeg)
 
-![w:650 h:500](img/marker-game.jpeg)
+# Staff planning with the 
+# Marker game
 
 ---
+
+# Brief history
+
+At DITE work was organized in _Core groups_;
+each course was planned and 
+
+---
+
 # What?
 
 - As Director of Studies at DITE, I carried out a “game” to plan staffing resources - _The Marker Game_.
