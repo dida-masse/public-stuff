@@ -1,10 +1,12 @@
 ---
 marp: true
 
-theme: gaia
-class:
+theme: uncover
+class: 
   - lead
-  - invert
+  
+
+  
 
 
 style: |
@@ -22,13 +24,13 @@ style: |
 
 # Brief history
 
-At DITE work was organized in _Core groups_;
+At DITE work was organized by the Director of Studies in _Core groups_;
+
 each course was planned and executed by a small team, 3-5 co-workers.
 
+
 Over time, this became too fragmented; 
-
  _involvment in several different groups/courses simultaneously_
-
  _groups changed significantly throughout the year_
 
 
@@ -44,19 +46,21 @@ We reorganiezed in larger teams (4-8);
 
 **GOALS:**
 
-- each team were responsible for courses over the whole academic year (such as all courses in a programme)
+- teams were constructed around programmes.
+
+- each team were responsible for their 'own' planning; courses (and other activties) over the whole (academic) year.
 
 - each team consisting of people with various roles teachers, researchers, course responsible, examiners 
 
-- each team had a shared responsibility to plan and implement the activities that had been committed to.
+- each team had a shared responsibility to plan and implement the activities that they had been committed or assigned to.
 
 
 
 ---
 
-# Staff planning - Marker game
+# Staff planning - The Marker game
 
-- To plan staffing resources we did this as a board "game" - _The Marker Game_.
+- To plan staffing resources we did this as a board "game" - _The Marker Game_ (TMG).
   
 - During one day, all staff participated in the event, and the goal was to staff all courses and determine where everyone’s working hours would be allocated.
 
@@ -65,18 +69,18 @@ We reorganiezed in larger teams (4-8);
 
 ---
 
-# The Marker Game - How
+# TMG - How
 
 The game worked as follows:
 
 - All courses were laid out on tables, as paper sheets, providing a chronological overview of the courses over the year.
-- Hours for courses was based on a course budget, projects and had it's hours and other activities had fixed hour allocations, and so on.
+- Hours for courses was based on a course budget, projects, research and other activities had hour allocations.
 
 ![w:1000](img/courses.png)
 
 ---
 
-### contd The Marker Game
+### contd TMG
 
 - Each participant received tokens (poker chips), which together represented their annual working hours. 
 - Deductions were made for things like professional development, departmental duties etc
@@ -91,7 +95,9 @@ The game worked as follows:
 
 ### contd The Marker Game
 
-When all colleagues had placed their markers, we went through everything in turn and each person got to explain their thoughts
+When all colleagues had placed their markers, we went through everything and each person got to explain "why" and "how" and their thoughts.
+
+Each team also tranfered their hours to Excel.
 
 ![bg left w:500 h:400](img/team-works.webp)
 
@@ -101,45 +107,18 @@ When all colleagues had placed their markers, we went through everything in turn
 
 | Pros | Cons |
 |---|---|
-Transparency | Somewhat time-consuming |
+Transparency | Time-consuming |
 Participation and engagement | Physical presence |
 Better understanding of the big picture | Unequal influence |
-Encourages dialogue** and collaboration | Flexibility |
+Encourages dialogue and collaboration | Flexibility |
 Practical problem-solving on the spot | Complex dependencies |
 Visual and tangible | Documentation and follow-up |
 
 
 ---
 
-# Advantages
+# Personal thoughts 
 
-Advantages:
-Transparency:
-Everyone can see how resources are allocated and what colleagues are planning to work on.
+I hope, that in due time, we can move towards a way of working within more or less autonomous teams.
 
-Participation and engagement:
-Staff are actively involved in the planning process, which can increase their sense of ownership and motivation.
-
-Better understanding of the big picture:
-By viewing the full year’s course offerings and activities, everyone gains a clearer overview of the organization’s operations.
-
-Encourages dialogue and collaboration:
-Discussions naturally arise around priorities, workload, and coordination.
-
-Practical problem-solving on the spot:
-Since everyone is present, conflicts, double bookings, and other practical issues can be resolved immediately.
-
-Visual and tangible method:
-Planning becomes easier to grasp and manage when visualized with tokens/markers and notes.
-
----
-# Disadvantages:
-
-**Time-consuming**
-Gathering all staff and conducting the game can take a lot of time, especially in larger organizations.
-
-Requires physical presence:
-The method depends on everyone being in the same place at the same time, which can be challenging in hybrid or remote settings.
-
-Risk of unequal influence:
-Some individuals may dominate discussions or influence others’ choices, leading to imbalances in task distribution.
+There are some challenges.
