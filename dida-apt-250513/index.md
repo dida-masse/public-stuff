@@ -109,10 +109,10 @@ Each team also tranfered their hours to Excel.
 |---|---|
 Transparency | Time-consuming |
 Participation and engagement | Physical presence |
-Better understanding of the big picture | Unequal influence |
+Better understanding of the big picture | Documentation and follow-up |
 Encourages dialogue and collaboration | Flexibility |
 Practical problem-solving on the spot | Complex dependencies |
-Visual and tangible | Documentation and follow-up |
+Visual and tangible | - |
 
 
 ---
