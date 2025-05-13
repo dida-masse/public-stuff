@@ -24,7 +24,7 @@ style: |
 
 # Brief history
 
-At DITE work was organized by the Director of Studies in _Core groups_;
+At DITE work was planned by the Director of Studies in _Core groups_;
 
 each course was planned and executed by a small team, 3-5 co-workers.
 
