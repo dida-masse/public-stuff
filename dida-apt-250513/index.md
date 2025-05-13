@@ -15,18 +15,18 @@ style: |
 
 # Marker Game
  
- or 
 
-### Planning game
+![w:650 h:500](img/marker-game.jpeg)
 
 ---
 # What?
 
-- When I was Director of Studies at DITE, I carried out a “game” to plan staffing resources - _The Marker Game_.
+- As Director of Studies at DITE, I carried out a “game” to plan staffing resources - _The Marker Game_.
   
 - All staff participated in the event, and the goal was to staff all courses and determine where everyone’s working hours would be allocated.
 
 - Although the primary goal was to staff all courses for the year, other activities such as projects, research time, and additional responsibilities were also included.
+
 
 ---
 
@@ -34,8 +34,8 @@ style: |
 
 The game worked as follows:
 
-- All courses were laid out on tables as paper sheets, providing a chronological overview of the course schedule.
-- Hours for courses was based on a course budget, while projects had fixed hour allocations, and so on.
+- All courses were laid out on tables, as paper sheets, providing a chronological overview of the courses over the year.
+- Hours for courses was based on a course budget, projects and had it's hours and other activities had fixed hour allocations, and so on.
 - Each participant received tokens of different denominations, which together represented their annual working hours. Deductions were made for things like professional development, departmental duties, etc., so that those hours were “protected.”
 - All participants then placed their tokens – that is, their time – on the courses (and other activities) they were going to be involved in during the year.
 
