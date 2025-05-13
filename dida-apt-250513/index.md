@@ -23,51 +23,85 @@ style: |
 # Brief history
 
 At DITE work was organized in _Core groups_;
-each course was planned and 
+each course was planned and executed by a small team, 3-5 co-workers.
+
+Over time, this became too fragmented; 
+
+ _involvment in several different groups/courses simultaneously_
+
+ _groups changed significantly throughout the year_
+
+
+
+```_Something else was needed_```
 
 ---
 
-# What?
+### history contd
 
-- As Director of Studies at DITE, I carried out a “game” to plan staffing resources - _The Marker Game_.
+We reorganiezed in larger teams (4-8);
+
+
+**GOALS:**
+
+- each team were responsible for courses over the whole academic year (such as all courses in a programme)
+
+- each team consisting of people with various roles teachers, researchers, course responsible, examiners 
+
+- each team had a shared responsibility to plan and implement the activities that had been committed to.
+
+
+
+---
+
+# Staff planning - Marker game
+
+- To plan staffing resources we did this as a board "game" - _The Marker Game_.
   
-- All staff participated in the event, and the goal was to staff all courses and determine where everyone’s working hours would be allocated.
+- During one day, all staff participated in the event, and the goal was to staff all courses and determine where everyone’s working hours would be allocated.
 
 - Although the primary goal was to staff all courses for the year, other activities such as projects, research time, and additional responsibilities were also included.
 
 
 ---
 
-# What? contd
+# The Marker Game - How
 
 The game worked as follows:
 
 - All courses were laid out on tables, as paper sheets, providing a chronological overview of the courses over the year.
 - Hours for courses was based on a course budget, projects and had it's hours and other activities had fixed hour allocations, and so on.
-- Each participant received tokens of different denominations, which together represented their annual working hours. Deductions were made for things like professional development, departmental duties, etc., so that those hours were “protected.”
-- All participants then placed their tokens – that is, their time – on the courses (and other activities) they were going to be involved in during the year.
 
-
-
----
-# Why?
-
-I was Directory of studies @DITE with about 22 people.
-
-The staffing planning at DITE was preceded by something called “**CORE GROUPS**”; for each corse a group of people was responsible for the planning and execution of it.
-
-Over time, this became too fragmented; 
-people were often involved in several different groups simultaneously, and the groups they were part of changed significantly throughout the year.
-
-_Something else was needed_.
+![w:1000](img/courses.png)
 
 ---
 
-# Pros
+### contd The Marker Game
+
+- Each participant received tokens (poker chips), which together represented their annual working hours. 
+- Deductions were made for things like professional development, departmental duties etc
+- Participants placed their tokens – their time – on the activities they were going to be involved in.
+
+(_notes were also written on large post-its_)
+
+![bg left w:600 h:600](img/markers.jpg)
+
+
+---
+
+### contd The Marker Game
+
+When all colleagues had placed their markers, we went through everything in turn and each person got to explain their thoughts
+
+![bg left w:500 h:400](img/team-works.webp)
+
+---
+
+# Conclusion
 
 | Pros | Cons |
 |---|---|
-Transparency | Time-consuming |
+Transparency | Somewhat time-consuming |
 Participation and engagement | Physical presence |
 Better understanding of the big picture | Unequal influence |
 Encourages dialogue** and collaboration | Flexibility |
@@ -96,7 +130,7 @@ Practical problem-solving on the spot:
 Since everyone is present, conflicts, double bookings, and other practical issues can be resolved immediately.
 
 Visual and tangible method:
-Planning becomes easier to grasp and manage when visualized with tokens and notes.
+Planning becomes easier to grasp and manage when visualized with tokens/markers and notes.
 
 ---
 # Disadvantages:
