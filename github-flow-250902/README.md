@@ -199,6 +199,9 @@ För att ta bort:
 git push origin --delete feature/namn-på-feature-branchen
 ```
 
+Eller så tar vi bort branches direkt på GitHub (om man nu vill ta bort dom).  
+
+
 2. Och så synkar vi med main:
 ```bash
 git checkout main
