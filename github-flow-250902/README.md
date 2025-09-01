@@ -13,8 +13,8 @@ Till detta exempel finns en presentation av GitHub flow [här](https://dida-mass
 
 
 **Team:**
-- Person A (Utvecklare)
-- Person B (Utvecklare)
+- Person A (msc)
+- Person B (efo)
 
 # EXEMPEL skapa repo och branches samt PR 
 Vi ska skapa ett repo, en feature branch, göra en uppdatering och slutligen göra ett PR som merge:as.
