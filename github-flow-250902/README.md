@@ -367,7 +367,8 @@ git merge main
 # när man är klar;
 git add .
 git commit - m "conflict solved"
-# pusha ändringarna till vår feature branch (Person A's PR i nu mergat i vårt PR):
+# pusha ändringarna till vår feature branch (Person A's PR i nu mergat i vårt PR)
+# -u sätter också upp tracking
 git push -u origin feature/person-b
 
 # gå till PR:t på GitHub och detta kan mergas (borde alltså vara ok)
