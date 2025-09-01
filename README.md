@@ -7,7 +7,7 @@ GH pages.
 
 [GH Flow del 1](https://dida-masse.github.io/public-stuff/github-flow-250902/github_flow_intro_1.html)  
 
-[GH Flow del 2](https://dida-masse.github.io/public-stuff/github-flow-250902/github_flow_intro_2.html)  
+[GH Flow del 2](https://dida-masse.github.io/public-stuff/github-flow-250902/github_flow_intro-2.html)  
 
 [exempel](https://dida-masse.github.io/public-stuff/github-flow-250902/exempel.md)
 
