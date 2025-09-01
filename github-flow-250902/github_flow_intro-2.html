@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Flow - Avancerade Ämnen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .reveal {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: #2c3e50;
+            text-transform: none;
+        }
+        .conflict-code {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.8em;
+            text-align: left;
+            margin: 20px 0;
+        }
+        .conflict-markers {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .current-changes {
+            color: #3498db;
+        }
+        .incoming-changes {
+            color: #27ae60;
+        }
+        .scenario-box {
+            border: 3px solid #e67e22;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            background: #fef5e7;
+        }
+        .scenario-header {
+            color: #e67e22;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
+        .emergency-alert {
+            background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .hotfix-flow {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        .hotfix-step {
+            background: #e74c3c;
+            color: white;
+            padding: 15px;
+            margin: 5px;
+            border-radius: 8px;
+            min-width: 140px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+        .hotfix-step.current {
+            background: #27ae60;
+        }
+        .feature-flag-demo {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        .flag-state {
+            width: 45%;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .flag-off {
+            background: #ecf0f1;
+            color: #7f8c8d;
+        }
+        .flag-on {
+            background: #d5f4e6;
+            color: #27ae60;
+        }
+        .tool-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .tool-card {
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+        }
+        .tool-icon {
+            font-size: 3em;
+            color: #3498db;
+            margin-bottom: 15px;
+        }
+        .workflow-yaml {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.7em;
+            text-align: left;
+            margin: 20px 0;
+        }
+        .yaml-key {
+            color: #3498db;
+        }
+        .yaml-string {
+            color: #e67e22;
+        }
+        .yaml-comment {
+            color: #95a5a6;
+            font-style: italic;
+        }
+        .pros-cons {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        .pros, .cons {
+            width: 45%;
+            text-align: left;
+        }
+        .pros h4 {
+            color: #27ae60;
+        }
+        .cons h4 {
+            color: #e74c3c;
+        }
+        .when-to-use {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .use-case {
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .good-fit {
+            background: #d5f4e6;
+            color: #27ae60;
+            border: 2px solid #27ae60;
+        }
+        .bad-fit {
+            background: #fadbd8;
+            color: #e74c3c;
+            border: 2px solid #e74c3c;
+        }
+        .timeline {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 0;
+        }
+        .timeline-item {
+            background: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            margin: 0 5px;
+            font-size: 0.9em;
+        }
+        .timeline-arrow {
+            font-size: 1.5em;
+            color: #7f8c8d;
+            margin: 0 10px;
+        }
+        .protection-rules {
+            background: #e8f6f3;
+            border-left: 5px solid #27ae60;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .qa-section {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .qa-question {
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        .qa-answer {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3498db;
+        }
+
+        p {
+            font-size: 0.6em;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+           
+            <!-- Slide 1: Sektion 4 Intro -->
+            <section data-background-gradient="linear-gradient(45deg, #e67e22 0%, #d35400 100%)">
+                
+                <h3 style="color: #0f0f0f;">Till sist - ett antal scenarion i GH Flow</h3>
+                <!-- <i class="fragment">och hur man potentiellt skulle kunna lösa dem</i> -->
+                <div class="fragment" style="margin-top: 50px; color: rgb(50, 49, 49); text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <p><i class="fas"></i><strong>Merge Conflicts</strong><br>kommer att hända</p>
+                    <p><i class="fas"></i><strong>Hotfixes</strong><br>när buggar uppstår i produktion</p>
+                </div>
+            </section>
+
+            <!-- Merge Conflicts -->
+            <section>
+                <h2><i class="fas fa-code-branch" style="color: #e74c3c;"></i> Merge Conflicts</h2>
+                
+                <div class="scenario-box">
+                    <div class="scenario-header">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        Scenario: Team-medlemmar ändrar samma fil
+                    </div>
+                    <p>T ex:<br><strong>efo</strong> gör något i <code>userController.js</code><br>
+                    <strong>msc</strong> gör något "annat", i samma fil på samma rader.</p>
+                    <p>både efo och msc commitar och pushar...konflikt!</p>
+                </div>
+            </section>
+
+            <section>
+                <p>"två personer arbetar i samma fil på samma rader... aja baja"</p>
+                <div class="conflict-code">
+                    <span class="conflict-markers">&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</span>
+                    <br>
+                    <span class="current-changes">
+                        function validateUser(user) {<br>
+                    <blockquote> 
+                        /*efo gör något mysko*/
+                    </blockquote>
+                    }
+                    </span>
+                    <br>
+                    <span class="conflict-markers">=======</span>
+                    <br>
+                    <span class="incoming-changes">
+                        function validateUser(user) { <br>
+                        <blockquote>
+                        &nbsp;&nbsp;/*msc gör något vackert*/
+                        </blockquote>
+                        }
+                    </span>
+                    <br>
+                    <span class="conflict-markers">&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature/performance-opt</span>
+                </div>
+            </section>  
+            <section>
+                <div style="margin-top: 30px;">
+                    <h4><i class="fas fa-wrench"></i> Lösning: Kommunikation => fixa merge-konflikter <u>tillsammans</u></h4>
+                    <p>Tala med varandra → kom överens → merga</p>
+                    <p class="fragment">Ännu bättre  → kom överens på förhand vad var och en ska arbeta med</p>
+                </div>
+            </section>
+
+            <!-- Slide 3: Hotfix Process -->
+            <section>
+                <h2><i class="fas" style="color: #e74c3c;"></i> Hotfixes - Produktionsbuggar</h2>
+                
+                <div class="fragment">
+                    <div style="font-size: 1.3em; margin-bottom: 15px;">
+                        När/om kritisk bugg uppstår i produktion - <u>snabb åtgärd krävs</u>.
+                        <br>
+                        En praxis är då att skapa en s.k <strong>hotfix-branch</strong> för att åtgärda buggen.
+                    </div>
+                </div>
+
+                <div class="hotfix-flow fragment">
+                    <div class="hotfix-step current">
+                        <i class="fas fa-code-branch"></i><br>
+                        main
+                    </div>
+                    <div class="timeline-arrow">→</div>
+                    <div class="hotfix-step">
+                        <i class="fas fa-code-branch"></i><br>
+                        Hotfix Branch
+                    </div>
+                    <div class="timeline-arrow">→</div>
+                    <div class="hotfix-step">
+                        <i class="fas fa-tools"></i><br>
+                        Fixa buggen
+                    </div>
+                    <div class="timeline-arrow">→</div>
+                    <div class="hotfix-step current">
+                        <i class="fas"></i><br>
+                        PR
+                    </div>
+                    <div class="timeline-arrow">→</div>
+                    <div class="hotfix-step">
+                        <i class="fas fa-rocket"></i><br>
+                        Deploy:a
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="conflict-code">
+                    <span class="yaml-comment"># Hotfix workflow</span><br>
+                    $ git checkout main<br>
+                    $ git checkout -b hotfix/namn-på-branchen
+                    <br>
+                    <br>
+                    <span class="yaml-comment"># Nu 'fixar' vi buggen...</span>
+                    <br>
+                    <br>
+                    $ git commit -m "städat upp efter efo"
+                    <br>
+                    $ git push origin hotfix/payment-crash
+                    <br>
+                    <br>
+                    <span class="yaml-comment"># Gör ett 'snabbt' PR <br>
+                    # Deploya direkt till produktion
+                    </span>
+                </div>
+
+                <div class="fragment" style="margin-top: 20px; color: #e74c3c; font-weight: bold;">
+                    <i class="fas fa-info-circle"></i>
+                    hotfixes blir ett speciallfall - måste lösas snabbt
+                </div>
+            </section>
+            
+            <section>
+                <p style="font-size: 2.5rem;">
+                    Det här var allt om GH Flow.
+                    <br>
+                    Men...
+                </p>
+            </section>
+            <!-- Nästa steg -->
+
+            <section data-background-gradient="linear-gradient(45deg, #3498db 0%, #2980b9 100%)">
+                <h1 style="color: rgb(31, 29, 29);">
+                    <i class="fas fa-cogs"></i>
+                    Ta det vidare
+                </h1>
+                <h3 style="color: #39646e;">några tips/förslag att titta vidare på</h3>
+                
+                <div style="margin-top: 50px; color: rgb(9, 9, 9); text-align: left; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    <p><i class="fas fa-robot"></i> <strong>GitHub Actions</strong> - CI/CD i workflowet</p>
+                    <p><i class="fas fa-shield-alt"></i> <strong>Branch Protection</strong> - "branch protection rules" på main för att säkerställa kvalitet</p>
+                    <p><i class="fas fa-flag"></i> <strong>Feature flags</strong> - för att testa 'saker' i produktion och 'rulla ut nya funktioner' gradvis</p>
+                </div>
+            </section>
+
+            <!-- När? -->
+            <section>
+                <h2><i class="fas fa-decision"></i> Till sist - vi tar det igen!</h2>
+                
+                <div class="when-to-use">
+                    <div class="use-case good-fit">
+                        <h4><i class="fas fa-check-circle"></i> GH flow passar bra för:</h4>
+                        <ul style="text-align: left; font-size: 1.5rem;">
+                            <li>Webb-appar, API:er & microservices</li>
+                            <li>Team som deployar ofta (dagligen)</li>
+                            <li>Agila team</li>
+                            <li>Open source-projekt</li>
+                            <li>Prototyper</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="use-case bad-fit">
+                        <h4><i class="fas fa-times-circle"></i> Mindre lämpligt för:</h4>
+                        <ul style="text-align: left; font-size: 1.5rem;">
+                            <li>Desktop/mobil-appar (native)</li>
+                            <li>Embedded systems</li>
+                            <li>Enterprise-projekt (stora produktioner) med långa utvecklingscykler</li>
+                            <li>Stora team (50+)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- lästips -->
+            <section>
+                <h2><i class="fas fa-book"></i> Lästips</h2>
+                
+                <div class="qa-section" style="font-size: 1rem; color: #0a0a0a;">
+                    
+                    <div class="qa-answer">
+                        <i class="fas fa-link"></i>
+                        <a href="https://davidregalado255.medium.com/what-is-github-flow-49fdda7be1b1">what-is-github-flow</a>
+                    </div>
+                    <div class="qa-answer">
+                        <i class="fas fa-link"></i>
+                        <a href="https://docs.github.com/en/get-started/using-github/github-flow">docs.github.com/en/get-started/using-github/github-flow</a>
+                    </div>
+                    <div class="qa-answer">
+                        <i class="fas fa-link"></i>
+                        <a href="https://githubflow.github.io/">githubflow.github.io/</a>
+                    </div>
+                    <div class="qa-answer">
+                        <i class="fas fa-link"></i>
+                        <a href="https://medium.com/@YodgorbekKomilo/the-complete-guide-to-github-flow-a-practical-tutorial-for-developers-0ea8e5ad1c1e">the-complete-guide-to-github-flow-a-practical-tutorial-for-developers</a>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- TACK -->
+            <section data-background-color="#2c3e50">
+                <h1 style="color: white;">
+                    <i class="fas"></i>
+                    Tack!
+                </h1>
+
+                <p>och förlåt till efo
+                    <br>
+                    <br>
+                    exit()
+                </p>
+                
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            transitionSpeed: 'default',
+            backgroundTransition: 'fade',
+            controls: true,
+            progress: true,
+            center: true,
+            touch: true,
+            loop: false,
+            fragments: true
+        });
+    </script>
+</body>
+</html>
