@@ -6,7 +6,9 @@ Till detta exempel finns en presentation av GitHub flow [här](https://dida-mass
 ## Innehåll
 
 > Detta är ett par enkla exempel för att praktiskt visa hur man kan använda Github Flow i ett litet team.
+> 
 > Första exemplet visa hur ett repo skapas, hur collaborators bjuds in, skapa feature branch, samt gör ett PR.
+> 
 > Andra exemplet visar en konflikt, där ändringar görs i samma fil, och hur man skulle kunna lösa den.
 
 
