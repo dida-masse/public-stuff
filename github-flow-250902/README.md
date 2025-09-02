@@ -35,7 +35,7 @@ Person B är den som ska göra en feature branch, göra en uppdatering och sedan
 
 ### 2: Klona repositoryt lokalt
 ```bash
-git clone https://github.com/[DITT-ANVÄNDARNAMN]/kursschema-webapp.git
+git clone https://github.com/[användarnamn-på-github]/namn-på-repo.git
 cd kursschema-webapp
 ```
 
@@ -80,7 +80,7 @@ git push origin main
 
 ### 6: Lägg till Person B som collaborator på github.com
 1. Gå till repot på GitHub
-2. Klicka "Settings" → "Collaborators and teams"
+2. Klicka "Settings"/"Collaborators and teams"
 3. Klicka "Add people"
 4. Lägg till Person B:s GitHub-användarnamn
 
@@ -96,7 +96,7 @@ Kom ihåg att vi INTE arbetar direkt på main - vi gör all utveckling i feature
 Enklast är att gå in på repot och kopiera korrekt url (klicka på 'Code' och ta ssh-url:en).
 
 ```bash
-git clone https://github.com/[PERSON-A-ANVÄNDARNAMN]/NAMN-PÅ-REPOT.git
+git clone https://github.com/[PERSON-A-användarnamn]/namn-på-repot.git
 cd namn-på-repot
 ```
 
